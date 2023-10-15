@@ -181,6 +181,7 @@ def placeOperatorButton(operation, position, padx):
     operatorButton = Button(root, text=operation, font=buttonFont, bg=buttonBgColor, fg=entryColor, relief=FLAT, padx=padx)
     operatorButton.bind("<Button-1>", noteOperation)
     operatorButton.place(x=position[0], y=position[1])
+    #This is a sample line
 #^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 
 placeOperatorButton('x', (244, 150), 24)

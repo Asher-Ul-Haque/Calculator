@@ -1,6 +1,6 @@
 # Calculator
 <b>Author: </b>
-Just Somebody
+Just Somebody Somewhere
 <br><br>
 Mimic of Windows 11 calculator small
 <br>

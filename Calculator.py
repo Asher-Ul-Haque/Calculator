@@ -6,7 +6,7 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 # - - - - - - - - - - - - - - - - - - - - -
 
-#The colors and fonts-
+#The colours and fonts-
 bgColor='#202020'
 buttonTextColor='#FFF0F0'
 numButtonBgColor='#393939'
@@ -51,7 +51,6 @@ outputBox.pack(anchor='e', pady=40, padx=10)
 def click(event):
     global deciOn
     global decimalPlaces
-    print('A button was clicked')
     next=event.widget.cget("text")
     if deciOn==True:
         decimalPlaces += 1
@@ -122,7 +121,6 @@ def backspace(event):
         num=str(output.get())
         num=num[0:len(num)-1]
         output.set(float(num))
-        print(decimalPlaces)
     else:
         output.set(output.get()//10)
         decimalPlaces-=1
@@ -131,7 +129,6 @@ def backspace(event):
     outputBox.update()
 #^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 def fuckIt(event):
-    print('Fuck it')
     global deciOn
     global decimalPlaces
     output.set(output.get() // 10)

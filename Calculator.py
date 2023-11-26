@@ -60,13 +60,11 @@ def click(event):
     outputBox.update()
 #^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 def clickSignChange(event):
-    print('A button was clicked')
     output.set(output.get() * -1)
     outputBox.update()
 #^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 def clickDecimal(event):
     global deciOn
-    print('A button was clicked')
     deciOn=True
 #^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
 def makeNumButton(num, position):
@@ -98,7 +96,6 @@ makeNumButton(0, (85, 282))
 def clear(event):
     global deciOn
     global decimalPlaces
-    print("A button was pressed")
     output.set(0)
     outputBox.update()
     deciOn=False
@@ -149,7 +146,6 @@ def noteOperation(event):
     global num1
     global operation
     operation = event.widget.cget("text")
-    print(operation)
     num1=output.get()
     output.set(0)
     deciOn=False
